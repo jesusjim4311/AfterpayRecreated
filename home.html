@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Afterpay</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <style>
+
+    body {
+      background-color: rgb(253, 253, 253);
+      font-family: Arial, sans-serif;
+    }
+
+    footer {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 5px;
+      margin-top: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 20px 10px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 20px 40px;
+      background-color: #b2fce4;
+      margin: 40px 40px;
+      border-radius: 25px;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+    }
+
+    .head {
+      text-align: center;
+      margin: 50px;
+      font-size: 40px;
+    }
+
+    .card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 25px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+    }
+
+    .card img {
+      object-fit: contain;
+      height: 200px;
+      width: 100%;
+      padding: 10px;
+    }
+
+    .card-body {
+      flex-grow: 1;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 100%;
+    }
+    
+    .afterpaylogo {
+      display: block;
+      margin: 20px auto;
+      max-width: 200px;
+    }
+
+    .btn {
+      padding: 15px;
+      background-color: #b2fce4;
+      color: black;
+      border: none;
+      text-decoration: none;
+      border-radius: 10px;
+    }
+
+    .btn:hover {
+      color: white;
+      background-color: #094147;
+    }
+
+    .navbar {
+        background-color: #f3fffb !important;
+        color: black;
+    }
+
+    .carousel-img {
+      height: 700px; 
+      max-height: 750px;
+      width: auto;      
+      object-fit: contain;
+    }
+  
+  </style>
+</head>
+
+<body>
+  
+  <section>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container d-flex justify-content-center">
+            <ul class="navbar-nav flex-row">
+               <li class="nav-item mx-3">
+                    <a class="nav-link active" href="/home.html">Home</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="/contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="/faq.html">FAQ</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</section>
+
+<img src="/images/download.png" class="afterpaylogo" alt="aplogo"/>
+<h1>Afterpay</h1>
+
+<section class="hero">
+  <h1>Shop Your Favorite Stores All Online</h1>
+    <h2 class="h2">Pay in 4 Installments</h2>
+      <p>Shop from a variety of online stores and split the cost into four equal payments.
+        Approval subject to credit history.
+      </p>
+    </section>
+
+<section>
+
+  <div id="carouselExampleIndicators" class="carousel slide">
+
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/buyingavintagemoroccanrug-d040d0b257fe43998c368a4ecf7e1879.jpeg" class="carousel-img d-block mx-auto" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/urban.webp" class="carousel-img d-block mx-auto" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/urban2.webp" class="carousel-img d-block mx-auto" alt="...">
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+  </div>
+
+</section>
+
+
+  <section class="my-5">
+
+  <h2 class="text-center mb-4">Explore Stores</h2>
+
+  <div class="container">
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+
+      <div class="col">
+        <div class="card">
+          <img src="/images/HM-Share-Image.jpg" class="card-img-top" alt="hmlogo"/>
+          <div class="card-body">
+            <h5 class="card-title">H&M</h5>
+            <p class="card-text">Shop the latest fashions.</p>
+            <a href="#" class="btn btn-primary">Shop</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="/images/2018-bestbuy-new-logo-design.png" class="card-img-top" alt="bblogo"/>
+          <div class="card-body">
+            <h5 class="card-title">Best Buy</h5>
+            <p class="card-text">Shop the latest technology.</p>
+            <a href="#" class="btn btn-primary">Shop</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="/images/amazon-logo-pictures.png" class="card-img-top" alt="amlogo"/>
+          <div class="card-body">
+            <h5 class="card-title">Amazon</h5>
+            <p class="card-text">Shop a variety of necessities.</p>
+            <a href="#" class="btn btn-primary">Shop</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="/images/images.png" class="card-img-top" alt="applelogo"/>
+          <div class="card-body">
+            <h5 class="card-title">Apple</h5>
+            <p class="card-text">Shop the latest technology.</p>
+            <a href="#" class="btn btn-primary">Shop</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="/images/images (1).png" class="card-img-top" alt="nikelogo"/>
+          <div class="card-body">
+            <h5 class="card-title">Nike</h5>
+            <p class="card-text">Shop your favorite sporting fashions.</p>
+            <a href="#" class="btn btn-primary">Shop</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="/images/untitled-2_43.jpg" class="card-img-top" alt="urbanlogo"/>
+          <div class="card-body">
+            <h5 class="card-title">Urban Outfitters</h5>
+            <p class="card-text">Shop a variety of necessities.</p>
+            <a href="#" class="btn btn-primary">Shop</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<footer>
+    <p>&copy; 2025 Afterpay | All rights reserved.</p>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>

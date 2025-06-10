@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FAQ</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+
+    body {
+      background-color: #fdfdfd;
+      font-family: Arial, sans-serif;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 5px;
+      margin-top: 40px;
+    }
+
+      .head {
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 80px;
+      font-size: 36px;
+      color: #222;
+    }
+
+    #accordion{
+        margin: 10px auto;
+        margin-bottom: 60px;
+        width: 600px;
+    }
+
+    #accordion li{
+        list-style: none;
+        width: 100%;
+        margin-bottom: 10px;  
+        background: #b2fce4;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    #accordion li label{
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+        font-size: 18px;  
+        font-weight: 500;
+        cursor: pointer;
+    }
+    #accordion li label span{
+        transform: rotate(90deg);
+    }
+
+    #accordion label + input[type="radio"]{
+        display: none;
+    }
+
+    #accordion .content{
+        padding: 0 10px;
+        font-size: 14px;
+        line-height: 26px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+    #accordion label + input[type="radio"]:checked + .content{
+        max-height: 400px;
+    }
+
+    .sales-table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: white;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        overflow-x: auto;
+}
+
+    .sales-table thead {
+        background-color: #b2fce4;
+        color: #fff;
+    }
+
+    .sales-table th,
+    .sales-table td {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .sales-table tbody tr:hover {
+        background-color:#f3fffb;
+    }
+
+    .store-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .navbar {
+        background-color: #f3fffb !important;
+        color: black;
+  }
+      .afterpaylogo {
+      display: block;
+      margin: 20px auto;
+      max-width: 200px; 
+    }
+
+  </style>
+</head>
+
+<body>
+
+<section>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container d-flex justify-content-center">
+            <ul class="navbar-nav flex-row">
+                <li class="nav-item mx-3">
+                    <a class="nav-link active" href="/home.html">Home</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="/contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="/faq.html">FAQ</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</section>
+
+
+<img src="/images/download.png" class="afterpaylogo" alt="aplogo">
+
+<section>
+    <h1 class="head">Frequently Asked Questions</h1>
+      <div class="accordion">
+        <ul id="accordion" style="padding-left: 0px;">
+
+          <li>
+            <label for="first">What is your return policy?<span>&#x3e;</span></label>
+              <input type="radio" name="accordion" id="first" checked>
+                <div class="content">
+                  <p>We accept returns within 30 days of the purchase with a receipt.</p>
+                </div>
+          </li>
+          
+          <li>
+            <label for="second">Do you offer international shipping?<span>&#x3e;</span></label>
+              <input type="radio" name="accordion" id="second">
+                <div class="content">
+                  <p>We do offer international shipping to most countries.</p>
+                </div>
+          </li>
+          
+          <li>
+            <label for="third">Is there an extra fee for internatinal shipping?<span>&#x3e;</span></label>
+              <input type="radio" name="accordion" id="third">
+                <div class="content">
+                  <p>There is an additional $15 fee for all countires outside of the Unites States.</p>
+                </div>
+          </li>
+
+        </ul>
+      </div>
+  </section>
+
+<section>
+    <h1 class="head">Upcoming Sales</h1>
+      <table class="sales-table">
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Discount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Electronics</td>
+            <td>May 10</td>
+            <td>May 20</td>
+            <td>Up to 30% Off</td>
+          </tr>
+          <tr>
+            <td>Clothes</td>
+            <td>June 12</td>
+            <td>June 18</td>
+            <td>30% Off Sitewide</td>
+          </tr>
+          <tr>
+            <td>Shoes</td>
+            <td>June 15</td>
+            <td>June 30</td>
+            <td>Buy 2 Get 1 Free</td>
+          </tr>
+          <tr>
+            <td>Home</td>
+            <td>June 17</td>
+            <td>June 25</td>
+            <td>20% Off Select Items</td>
+          </tr>
+          <tr>
+            <td>Red Tag</td>
+            <td>June 18</td>
+            <td>June 23</td>
+            <td>50% Off All Items</td>
+          </tr>
+        </tbody>
+    </table>
+</section>
+
+<footer>
+  <p>&copy; 2025 Afterpay | All rights reserved.</p>
+</footer>
+
+</body>
+</html>
